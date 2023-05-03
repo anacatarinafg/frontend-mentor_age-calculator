@@ -83,4 +83,51 @@ body {
 }
 .ageTimeline .ageTimeline__info .ageTimeline__span {
   color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 768px) {
+  .age {
+    border-radius: 10px 10px 130px 10px;
+  }
+  .ageCalculator {
+    gap: 10px;
+    padding-right: 0;
+  }
+  .ageCalculator .ageCalculator__label {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .ageCalculator .ageCalculator__label .ageCalculator__input {
+    width: 80px;
+    display: block;
+    font-size: 32px;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0.5em 0.75em;
+    font-family: "Poppins", sans-serif;
+  }
+  .age__break {
+    position: relative;
+  }
+  .age__break .arrow {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    position: absolute;
+    right: 40%;
+  }
+  .ageTimeline {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+  }
+  .ageTimeline .ageTimeline__info {
+    font-size: 46px;
+  }
+  .ageTimeline .ageTimeline__info .ageTimeline__span {
+    color: hsl(259, 100%, 65%);
+  }
 }/*# sourceMappingURL=style.css.map */
