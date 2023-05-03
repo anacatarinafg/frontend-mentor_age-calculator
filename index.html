@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <main>
+    <section class="age">
+      <form class="ageCalculator">
+        <label for="day" class="ageCalculator__label">Day
+          <input type="number" id="day" min="1" max="31" class="ageCalculator__input" required>
+        </label>
+        <label for="month" class="ageCalculator__label">Month
+          <input type="number" id="month" min="1" max="12" class="ageCalculator__input" required>
+        </label>
+        <label for="year" class="ageCalculator__label">Year
+          <input type="number" id="year" class="ageCalculator__input" required>
+        </label>
+      </form>
+      <!--  -->
+      <div class="age__break" onclick="ageCalculator()">
+        <span class="material-symbols-outlined arrow">
+          arrow_downward
+        </span>
+      </div>
+      <!--  -->
+      <div class="ageTimeline">
+        <h1 class="ageTimeline__info"><span class="ageTimeline__span">--</span> years</h1>
+        <h1 class="ageTimeline__info"><span class="ageTimeline__span">--</span> months</h1>
+        <h1 class="ageTimeline__info"><span class="ageTimeline__span">--</span> days</h1>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
